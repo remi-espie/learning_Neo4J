@@ -1,0 +1,1 @@
+CREATE (:School {Name: "Polytech", Domain: "DevOps", Diploma: "Engineer"})<-[:STUDY {Since: 2022}]-(:Person {Name: "Rémi", Surname: "Espié", Age: 25})-[:HOBBY {Since: 2018}]->(:Hiking {Type: "Mountain"})
