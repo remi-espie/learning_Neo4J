@@ -48,7 +48,7 @@ cd spark
 env JAVA_OPTS="-Xmx10G" sbt assembly # The 1G memory limit is not enough, so upgrade the memory limit from 1G to 10G just because we can
 ``` 
 
-Then upload the build to the minio bucket, as well as the `users.csv` file.
+Then upload the build (in `target/scala-2.12/Simple_Project-assembly-1.0.jar`) to the minio bucket, as well as the `users.csv` file.
 
 ## Kubernetes
 
