@@ -10,6 +10,8 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "3.5.5",
   "org.apache.hadoop" % "hadoop-common" % "3.3.1",
   "org.apache.hadoop" % "hadoop-aws" % "3.3.1",
+  "org.neo4j" % "neo4j-connector-apache-spark_2.12" % "5.3.5_for_spark_3",
+  "org.mongodb.spark" %% "mongo-spark-connector" % "10.4.1"
 )
 
 assemblyMergeStrategy in assembly := {
