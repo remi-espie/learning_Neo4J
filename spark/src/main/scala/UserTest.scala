@@ -16,6 +16,8 @@ object UserTest {
       .config("spark.hadoop.fs.s3a.access.key", minioAccessKey)
       .config("spark.hadoop.fs.s3a.secret.key", minioSecretKey)
       .config("spark.hadoop.fs.s3a.path.style.access", "true")
+      .config("spark.hadoop.fs.s3a.connection.timeout", "5000")
+      .config("spark.hadoop.fs.s3a.connection.establish.timeout", "5000")
       .getOrCreate()
 
     import spark.implicits._
