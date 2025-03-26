@@ -17,17 +17,11 @@ spec:
     serviceAccount: spark
     envVars:
       MINIO_ENDPOINT: "http://minio-1742981469.default.svc:9000"
-      MINIO_ACCESS_KEY: "gTn6Dh1dV6wCxWqM8tdy"
-      MINIO_SECRET_KEY: "cxJ5JZe82VBDppP9RMheQMJjd0ELLBvjQjgD2Kxh"
+      MINIO_ACCESS_KEY: "rootuser"
+      MINIO_SECRET_KEY: "rootpass123"
       MINIO_BUCKET: "bucket"
       MINIO_FILE: "users.csv"
   executor:
     cores: 1
     instances: 1
     memory: "512m"
-#  sparkConf:
-#    "spark.hadoop.fs.s3a.endpoint": "http://minio:9000"
-#    "spark.hadoop.fs.s3a.access.key": "gTn6Dh1dV6wCxWqM8tdy"
-#    "spark.hadoop.fs.s3a.secret.key": "cxJ5JZe82VBDppP9RMheQMJjd0ELLBvjQjgD2Kxh"
-#    "spark.hadoop.fs.s3a.path.style.access": "true"
-#    "spark.hadoop.fs.s3a.impl": "org.apache.hadoop.fs.s3a.S3AFileSystem"
