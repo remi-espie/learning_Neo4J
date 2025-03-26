@@ -18,7 +18,9 @@ object MongoDB {
     spark.sparkContext.setLogLevel("ERROR")
 
     val df = spark.read
-      .format("mongo")
+      .format("mongodb")
+      .option("database", database)
+      .option("collection", collection)
       .load()
 
     df.show()
