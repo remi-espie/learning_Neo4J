@@ -1,3 +1,9 @@
+---
+format: pdf
+mainfont: JetBrains Mono
+monofont: JetBrains Mono
+---
+
 # Analyse the Fraud Detection dataset including
 
 ## 1. Schema visualization
@@ -123,7 +129,7 @@ Spark log:
 +---------------+----+
 ```
 
-See code at [spark/src/main/scala/Neo4jToSpark.scala](./spark/src/main/scala/Neo4jToSpark.scala).
+See code at [./spark/src/main/scala/Neo4jToSpark.scala](./spark/src/main/scala/Neo4jToSpark.scala).
 
 ## 6: How many clusters of FraudRings with greater than 9 client nodes?
 

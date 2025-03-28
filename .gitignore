@@ -2,3 +2,9 @@
 *.iml
 **.bsp
 **target
+
+spark/project/build.properties
+spark/stackoverflow.csv
+spark/users/
+spark/wikipedia.dat
+
